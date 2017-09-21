@@ -1,0 +1,63 @@
+<div class="container-fluid">
+  {{#if messages.success}}
+    <div role="alert" class="alert alert-success">
+      {{#each messages.success}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.error}}
+    <div role="alert" class="alert alert-danger">
+      {{#each messages.error}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  {{#if messages.info}}
+    <div role="alert" class="alert alert-info">
+      {{#each messages.info}}
+        <div>{{msg}}</div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel">
+        <div class="mdi-map-container">
+          <h3>{{{Team1}}}</h3>
+          <canvas id="map-1" class="mdi-dungeon-canvas"></canvas>
+        </div>
+        <div class="mdi-dungeon-level-list-container">
+          <ul class="mdi-dundeon-level-list">
+            <li><button map="1" class="mdi-map-button">1</button></li>
+            <li><button map="2" class="mdi-map-button">2</button></li>
+            <li><button map="3" class="mdi-map-button">3</button></li>
+            <li><button map="4" class="mdi-map-button">4</button></li>
+            <li><button map="5" class="mdi-map-button">5</button></li>
+            <li><button map="6" class="mdi-map-button">6</button></li>
+          </ul>
+        </div>
+        <a href="#" role="button" class="btn btn-default">View details</a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel">
+        <h3>{{{Team2}}}</h3>
+        <div class="mdi-map-container">
+          <canvas id="map-2" class="mdi-dungeon-canvas"></canvas>
+        </div>
+        <div class="mdi-dungeon-level-list-container">
+          <ul class="mdi-dundeon-level-list">
+            <li><button map="1" class="mdi-map-button">1</button></li>
+            <li><button map="2" class="mdi-map-button">2</button></li>
+            <li><button map="3" class="mdi-map-button">3</button></li>
+            <li><button map="4" class="mdi-map-button">4</button></li>
+            <li><button map="5" class="mdi-map-button">5</button></li>
+            <li><button map="6" class="mdi-map-button">6</button></li>
+          </ul>
+        </div>
+        <a href="#" role="button" class="btn btn-default">View details</a>
+      </div>
+    </div>
+  </div>
+</div>
